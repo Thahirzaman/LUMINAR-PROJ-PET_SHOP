@@ -1,0 +1,358 @@
+body{
+    /* font-family: "Noto Sans JP", sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.header-1{
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+    background-image: url("./image/top_bar_pattern.png");
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+}
+.header-1 img{
+    width: inherit;
+}
+.header-1-label-div{
+    color: white;
+    font-weight: bold;
+}
+.customer-support-span{
+    border-right: 1px solid #fff;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: normal;
+}
+.header-2 img{
+    height: 5rem;
+}
+.header-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem;
+}
+.header-2-search-div, .header-2-search-div-small{
+    position: relative;
+    width: 40%;
+}
+.fa-search{
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%)
+}
+
+.nav-link{
+    color: white!important;
+    text-transform: uppercase!important;
+    letter-spacing: inherit!important;
+}
+.dog-food, .toys, .breed-type, .online-delivery, .user-rating,.links{
+    padding: 2rem 1rem;
+}
+.dog-food h2, .toys h2, .breed-type h2,.user-rating h2, .dog-food .row>div, .toys .row>div, .breed-type .row>div,.user-rating .row>div,
+.links .row>div, .online-delivery .row>div{
+     margin-bottom: 1rem;
+}
+.dog-food h2, .toys h2, .breed-type h2,.user-rating h2{
+    color: #052a50
+}
+.dog-food img, .toys img, .breed-type img{
+    height:180px;
+    width:180px;
+    margin: 0 auto;
+}
+.dog-food-col{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 15%);
+}
+.dog-food-col:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.dog-food-col> span{
+    border-top: 1px solid #F7F7F7;
+}
+.price{
+    padding-top: 2rem;
+    border-bottom: 1px solid #F7F7F7;
+}
+.price span:first-child{
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.price span:last-child{
+    color: #8e9294;
+    font-weight: 400;
+}
+.add-to-cart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.add-to-cart i{
+    flex: 25%;
+}
+.add-to-cart span{
+    flex:75%;
+}
+.breed-size{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.online-delivery .row{
+    background-color: #052a50;
+    padding: 1rem;
+    color:white;
+}
+.online-delivery .flex-column{
+    margin-left: 1rem;
+}
+
+
+.user-rating-content{
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    border-radius: 24px;
+  
+}
+footer{
+    background-color: #052a50;
+    color: white;
+    padding-bottom: 2rem;
+}
+.quick-links span, .signup-link span, .dog-food .row>div, .toys .row>div, .breed-type .row>div{
+    cursor: pointer;
+}
+.quick-links span:hover, .signup-link span:hover{
+    color:yellow;
+}
+.links .row >div{
+    padding: 1rem 6rem;
+}
+.social-icon img{
+    height:2rem;
+}
+.social-icon>* {
+    margin-right: 0.5rem;
+}
+.header-3 .container-fluid{
+    padding:0 1rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-1-label-div{
+        font-size: 6px;
+    }
+    .header-2 img{
+        height: 3rem;
+    }
+    .header-2-search-div{
+        display: none;
+    }
+    .header-2-small{
+        display: inline-block;
+        padding: 1rem 12px;
+        width: 100%;
+    }
+    .header-2-search-div-small{
+       width: 100%;
+    }
+    .header-3{
+        position: absolute;
+        top: 10%;
+    }
+    .header-2 img {
+        margin-left: 4rem;
+    }
+    .navbar-toggler{
+        font-size: 0.5rem;
+    }
+    .navbar-collapse{
+        background-color: rgb(5, 42, 80);
+        z-index: 3;
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+        box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    }
+    .header-3 .navbar{
+        background-color: transparent !important;
+    }
+    .header-2-location-div span, .header-2-cart-div span, .header-2-login-div span{
+        display: inline-block;
+    }
+    .header-2-location-div, .header-2-cart-div, .header-2-login-div{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+        align-items: center;
+    }
+    .header-3 .container-fluid{
+        margin-top: 1rem;
+    }
+    .video-text{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .header-2-location-div span, .header-2-cart-div span, .header-2-login-div span{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header-1-label-div{
+        font-size: 10px;
+    }
+    .header-2-search-div{
+        display: block;
+    }
+    .header-2-small{
+        display: none;
+    }
+    .header-2 img {
+        margin-left: 4rem;
+    }
+    .header-3{
+        position: absolute;
+        top: 10%;
+    }
+    .navbar-toggler{
+        font-size: 1rem;
+    }
+    .navbar-collapse{
+        background-color: rgb(5, 42, 80);
+        z-index: 1;
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 1px solid black;
+        box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    }
+    .header-3 .navbar{
+        background-color: transparent !important;
+    }
+    .header-2-location-div, .header-2-cart-div, .header-2-login-div{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.75rem;
+        align-items: center;
+    }
+    .header-3 .container-fluid{
+        margin-top: 1rem;
+    }
+    .video-text{
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header-1-label-div{
+        font-size: 13px;
+    }
+    .header-2 img {
+        margin-left: 4rem;
+    }
+    .header-3{
+        position: absolute;
+        top: 10%;
+    }
+    .navbar-toggler{
+        font-size: 1rem;
+    }
+    .header-2-location-div, .header-2-cart-div, .header-2-login-div{
+        flex-direction: row;
+        font-size: 1rem;
+    }
+    .header-2-location-div i, .header-2-cart-div i, .header-2-login-div i{
+        margin-right:0.5rem;
+    }
+    .video-text{
+        font-size: 1.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header-1-label-div{
+        font-size: 14px;
+    }
+    .header-2 img {
+        margin-left: 0rem;
+    }
+    .header-3{
+        position: static;
+        top: 0%;
+    }
+    .navbar-collapse{
+        /* background-color: #052a50; */
+        margin-top: unset;
+        padding: unset;
+        border: transparent;
+        box-shadow: unset;
+    }
+    .header-3 .navbar{
+        background-color:  #052a50 !important;
+    }
+    .video-text{
+        font-size: 2rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header-1-label-div{
+        font-size: 14px;
+    }
+    .video-text{
+        font-size: 2rem;
+    }
+}
+.gif-vdo {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .gif-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gif-link{
+      text-decoration: none;
+  }
+  .signup-modal .btn{
+    background-color: #052a50;
+
+  }
+  .signup-modal{
+    color: #052a50;
+  }
+  .signup-modal .modal-body{
+    background-color: #052a50;
+    color: white;
+    padding: 2rem;
+  }
+  .signup-modal .modal-body label{
+    font-size: 1.5rem;
+  }
