@@ -183,6 +183,8 @@ footer{
     }
     .navbar-toggler{
         font-size: 0.5rem;
+        margin-top: -24px
+        /* changed on 19 may  */
     }
     .navbar-collapse{
         background-color: rgb(5, 42, 80);
